@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: aliceblue;
+    height: 100vh;
+    font-family: monospace;
+}
+
+.muzzulator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color:rgb(69, 66, 66);
+    width: 300px;
+    height: 450px;
+    border:solid 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.display {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    height: 80px;
+    width: 300px;
+    line-height: 80px;
+    font-size: 44px;
+    border-radius: 10px;
+}
+
+.pad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 15;
+  margin-top: 10px;
+}
+
+button {
+  border: 1px solid black; 
+  padding: 10px 10px; 
+  border-radius: 5px; 
+  margin: 2px;
+  font-size: 20px;
+  font-family: monospace;
+  flex: 1 0 20%;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.zero {
+  flex: 1 0 45%;  
+}
+
+button:active {
+    background-color:ghostwhite;
+}
+
+.clear, .positiveNegative, .percent {
+    background-color:rgb(76, 137, 250);
+}
+
+.divide, .multiply, .subtract, .add, .even {
+    background-color: coral;
+}
+
+.seven, .eight, .nine, .four, .five, .six, 
+.one, .two, .three, .zero, .point {
+    background-color: cadetblue;
+}
